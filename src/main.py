@@ -10,7 +10,7 @@ def main():
         print("a and b is required")
     _, a, b, *_ = sys.argv
     print(add(*map(int, (a, b))))
-
+    a
 
 if __name__ == "__main__":
     main()
