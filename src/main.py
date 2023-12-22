@@ -11,5 +11,6 @@ def main():
     _, a, b, *_ = sys.argv
     print(add(*map(int, (a, b))))
 
+
 if __name__ == "__main__":
     main()
