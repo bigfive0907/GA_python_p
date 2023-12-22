@@ -27,3 +27,7 @@ jobs:
         run: |
           echo "::add-matcher::.github/workflows/flake8-problem-matcher.json"
           poetry run python -m flake8 .
+      - name: Coverage
+        run: poetry add -D pytest-cov
+             poetry run -m pytest --cov --cov-report=html
+
